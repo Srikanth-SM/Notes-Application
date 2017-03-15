@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="Vertical_align">
+    <div class="well center-block">
+
+        <form ng-submit="addInfo(currentUser)">
+            <div class="row">
+                <div><span class="label label-default">title:</span></div>
+                <textarea class="Alignment" name="name" ng-model="currentUser.title" rows="8"></textarea>
+            </div>
+            <!-- {{title}} -->
+            <div class="row">
+                <div><span class="label label-default">description:</span></div>
+                <textarea  class="Alignment" name="name" ng-model="currentUser.description" rows="8"></textarea>
+            </div>
+            <!-- {{currentUser.description}} -->
+            <div class="row">
+                <div><span class="label label-default">priority:</span>
+                    <select ng-model="currentUser.priority">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <!-- <option value="audi">Audi</option> -->
+                    </select>
+                </div>
+            </div>
+            <!-- {{currentUser.priority}} -->
+            <div class="row">
+                <button type="submit" class="btn btn-outline-primary">Add</button>
+            </div>
+        </form>
+    </div>
+        </div>
+</div>
+
+

@@ -1,0 +1,48 @@
+<div class="container">
+{{title}}
+    <div ng-repeat="note in noteList">
+        <div id="{{note.ID}}" class="col-md-3 col-sm-3  well thumbnail margin box">
+            <div class="row">
+                <div class=" scroll">
+                    <a class="title" ng-hide="enable1" ng-click="enable1=!enable1">{{note.title}} </a>
+
+                    <!-- <button ></button> -->
+
+                    <div ng-show="enable1" >
+                        <input ng-model="note.title">
+                        <button class="btn btn-primary" ng-click="enable1=!enable1;"> Done </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" scroll">
+                    <a class="row title " ng-hide="enable2" ng-click="enable2=!enable2">{{note.description}} </a>
+
+                    <!-- <button ></button> -->
+
+                    <div ng-show="enable2">
+                        <input ng-model="note.description" ng-show="enable2=!enable2">
+                        <button class="btn btn-primary" ng-click="enable2=!enable2"> Done </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" scroll">
+                    <a class="row title" ng-hide="enable3" ng-click="enable3=!enable3">{{note.priority}} </a>
+                    <div ng-show="enable3">
+                        <input ng-model="note.priority" ng-show="enable3=!enable3">
+                        <button class="btn btn-primary" ng-click="enable3=!enable3"> Done </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
